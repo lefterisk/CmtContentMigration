@@ -1,0 +1,27 @@
+{
+  "name": "lefterisk/CmtContentMigration",
+  "description": "COntent import/Export module for the CMT",
+  "type": "library",
+  "authors": [{
+    "name": "Lefteris Kokkonas",
+    "email": "lefteris.kokkonas@gmail.com",
+    "homepage": "http://lefterisk.com",
+    "role": "Developer"
+  }],
+  "require": {
+    "php"                         : ">=5.3.3",
+    "zendframework/zendframework" : "2.*",
+    "rwoverdijk/assetmanager"     : "1.*",
+    "robmorgan/phinx"             : "^0.5.0",
+    "valorin/zf2-phinx-module"    : "0.*",
+    "phpoffice/phpexcel"          : "^1.8"
+  },
+  "autoload": {
+    "psr-0": {
+      "ContentMigration": "src/"
+    },
+    "classmap": [
+      "contentMigration/Module.php"
+    ]
+  }
+}
